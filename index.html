@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CONTROLGAST</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONTROGAST</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Encabezado de la aplicación -->
+  <header>
+    <h1>CONTROGAST</h1>
+    <input type="date" id="datePicker">
+  </header>
+
+  <!-- Formulario para agregar un nuevo gasto -->
+  <section id="expenseForm">
+    <input type="text" id="expenseName" placeholder="Nombre del gasto" required>
+    <input type="text" id="expenseProvider" placeholder="Empresa proveedora" required>
+    <input type="number" id="expenseAmount" placeholder="Importe gastado" required>
+    <button onclick="addExpense()">Agregar gasto</button>
+  </section>
+
+  <!-- Lista de gastos y total -->
+  <section id="expenseList">
+    <h2>Gastos del día</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Proveedor</th>
+          <th>Importe (€)</th>
+        </tr>
+      </thead>
+      <tbody id="expensesTableBody"></tbody>
+    </table>
+    <h3>Total: €<span id="totalAmount">0.00</span></h3>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
